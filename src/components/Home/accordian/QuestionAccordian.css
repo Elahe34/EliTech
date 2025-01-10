@@ -1,0 +1,93 @@
+.myaccordian{
+    margin-top: 10px;
+}
+.myaccordian .title-accordian{
+    text-align: center;
+}
+.myaccordian .title-accordian .accordian-title{
+    padding: 5px 0px;
+}
+.myaccordian .title-accordian .title-text{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.title-accordian .title-text .send-question{
+    padding-left: 5px;
+}
+.title-accordian .title-text .send-question{
+    cursor: pointer;
+}
+.myaccordian .accordian{
+  display: grid;
+  place-items: center;
+}
+.accordian .items{
+    border: 1px solid #1f93ff;
+    width: 500px;
+    margin: 5px 0px;
+}
+.accordian .items .header-accordian{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 15px;
+    font-size: 1.3em;
+    
+}
+.accordian .items .open-accordian-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    text-align: center;
+}
+@media (max-width:2024px){
+    .accordian .items{
+        width: 700px;
+    }
+}
+@media (max-width:540px) {
+    .myaccordian{
+        width: 350px;
+        margin: 10px auto;
+       
+    }
+    .myaccordian .title-accordian{
+        font-size: .8em; 
+    }
+    .myaccordian .title-text{
+        font-size: .8em;
+    }
+    .myaccordian .title-text .send-question{
+        padding: 0px;
+    }
+    .accordian .items{
+        width: 350px;
+    }
+    
+}
+@media (max-width:360px) {
+    .myaccordian{
+        width: 300px;
+        margin: 10px auto;
+       
+    }
+    .accordian .items .header-accordian{
+        font-size: 1.2em;
+    }
+    .myaccordian .title-accordian{
+        font-size: .8em; 
+    }
+    .myaccordian .title-text{
+        font-size: .8em;
+    }
+    .myaccordian .title-text .send-question{
+        padding: 0px;
+    }
+    .accordian .items{
+        width: 300px;
+    }
+    
+}

@@ -1,0 +1,90 @@
+.filter{
+    display: flex;
+    width: 100%;
+    margin: 10px 16px;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F2F2F2;
+
+}
+.filter-sort{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.filter-sort .form-checkbox{
+    display: flex;
+}
+.filter-sort .form-checkbox .filter-inputs{
+    margin: 10px;
+}
+.filter-sort .form-checkbox .forms{
+    margin-right: 0px;
+    padding: 10px;
+}
+.filter-brand .select-part{
+    margin-right: 10px;
+    width: 150px;
+    font-size: 1em;
+}
+.filter-brand option{
+    width: 100px;
+}
+.search-part .search-input{
+    width: 170px;
+    font-size:.6em;
+    border-radius: 5px;
+    border: 1px solid #d8d6d6;
+    padding: 5px;
+
+}
+.search-part .search-input:hover{
+    background-color: #e6e6e6;
+}
+.search-part .search-btn{
+    width: 50px;
+    font-size: 1em;
+    border: none;
+    background: transparent;
+    margin-left: 10px;
+}
+@media (max-width:640px){
+    .filter{
+        flex-direction: column;
+    }
+}
+@media (max-width:450px) {
+    .filter{
+        display: flex;
+        width: 100%;
+        margin: 10px 10px;
+        border-radius: 5px;
+        padding: 10px;
+        
+        
+    }
+    .sort-title{
+        font-size: .9em;
+    }
+    .filter-label{
+        font-size: .75em;
+    }
+    .filter-sort .form-checkbox .filter-inputs{
+        margin: 3px;
+        width: 10px;
+        height: 10px;
+    }
+    .filter-brand{
+        font-size: .9em;
+    }
+    .filter-brand .select-part{
+        width: 100px;
+    }
+    .forms{
+        margin-right: 0px;
+    }
+}

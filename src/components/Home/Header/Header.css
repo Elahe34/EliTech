@@ -1,0 +1,62 @@
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+
+.header-container .original-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.text-part {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: #eee;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 8s ease-in-out forwards;
+    text-align: center;
+    font-size: 2em;
+}
+/* animation for header text part */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .header-container {
+        height: auto; 
+    }
+
+    .original-video {
+        width: 100%;
+        height: auto; 
+    }
+
+    .text-part {
+        top: 30%; 
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .text-part {
+        top: 30%; 
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 500px) {
+    .text-part {
+        top: 20%; 
+        font-size: .5em;
+    }
+}

@@ -1,0 +1,93 @@
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+  
+  .details .img-container{
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+    height: 450px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+  }
+  
+  .details .img-container:hover{
+    background-size: 150%;
+    border: 1px solid #ddd;
+    cursor: zoom-in;
+  }
+  
+  .box-details{
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+  }
+  
+  .box-details .product-title{
+    color: blue;
+    letter-spacing: 2px;
+    font-size: 2rem;
+  }
+  .box-details .product-price{
+    margin: 10px 0;
+  }
+
+  .colors .color-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .box-details .content{
+    line-height: 1.5;
+    margin: 10px 0;
+    opacity: .8;
+  }
+  .box-details .description{
+    font-size: 1.6em;
+    margin: 10px 0;
+
+  }
+  
+  .box-details .thumb{
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .box-details .thumb .image-thumb{
+    width: 50px;
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+  .box-details .card{
+    width: 170px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: .9em;
+    background-color: blue;
+    border: 2px solid blue;
+    color: #fff;
+  }
+  .box-details .card:hover{
+    background-color: rgb(2, 2, 126);
+    border: 2px solid rgb(2, 2, 126);
+  }
+  

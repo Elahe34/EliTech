@@ -1,0 +1,153 @@
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+.card {
+    background-color:#fff;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    
+}
+
+.card .card-img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.card .card-title {
+    margin: 20px 0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.card .buy{
+    color: #fff;
+    background: rgb(0, 0, 255);
+    font-size: 1em;
+    padding: 5px 20px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    margin: 0px 15px;
+
+}
+.card .learn-more{
+    font-size: 1em;
+    color: #fff;
+    background: none;
+    background:crimson;
+    padding: 5px 15px;
+    border: 1px solid crimson;
+    border-radius: 20px;
+}
+
+.card .buy:hover {
+    background-color: #01015a;
+    border: 1px solid #01015a;
+
+}
+.card .learn-more:hover {
+    background-color: rgb(148, 1, 30);
+    border: 1px solid rgb(148,1,30);
+
+    
+}
+.title-star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+.title-star::after{
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(50%,50%);
+    width: 400px;
+    height: 3px;
+    background: rgb(243, 174, 188);
+    margin: 15px 0px;
+    top: 50px;
+}
+.new{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 2em;
+    color: crimson;
+    margin-right: 10px;
+
+}
+.starpic{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+
+}
+
+@media (max-width:510px) {
+    .card-container{
+        padding: 0px 10px;
+    }
+    .card-container .card {
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+    }
+    .title-star{
+        font-size: .7em;
+        padding: 10px;
+    }
+    .title-star::after{
+        width: 270px;
+    }
+    .card .card-img{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+    .card .card-title{
+        font-size: .9em;
+        margin:10px 0px;
+
+    }
+    .card .learn-more,.card .buy{
+        font-size: .8em;
+    }
+    
+}
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 1930px) {
+    .card-container {
+        max-width: 80vw;
+        margin: 10px auto; 
+        display: flex;
+        justify-content: space-around;       
+    }
+}
+

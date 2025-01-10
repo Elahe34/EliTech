@@ -1,0 +1,119 @@
+.registeration{
+    background-image: url('../../../public/images/register.jpg');
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register-part{
+    background: rgba(0, 0, 0, .6);
+    border-radius: 5px;
+    color: #fff;
+    width: 400px;
+    margin-bottom: 50px;
+
+}
+.register-part .title-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    border-bottom: 1px solid rgb(78, 78, 78);
+    margin: 0px 25px;
+    margin-bottom:25px;
+
+}
+
+
+.register-part .form-box .input-part{
+    padding: 10px 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.input-part .login-label{
+    align-self: first baseline;
+    margin:0px 18px;
+    margin-top: 5px;
+}
+.input-part .login-input{
+    width: 90%;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    font-size: 1em;
+    direction: ltr;
+    padding: 0 10px;
+
+
+}
+.form-box .register-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 23px;
+
+}
+.input-part .password-box{
+    position: relative;
+}
+.password-box .input-icon{
+    position: absolute;
+    top: 310px;
+    right: 485px;
+    color: rgb(63, 61, 61);
+    font-size: 1.3em;
+}
+.form-box .register-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-box .register-btn .btn{
+    width: 90%;
+    height: 30px;
+    margin: 40px 0px;
+    border-radius: 5px;
+    font-size: .9em;
+    border: 1px solid rgb(19, 195, 19);
+    background-color: rgb(19, 195, 19);
+    cursor: pointer;
+    color: #fff;
+
+}
+.form-box .register-btn .btn:hover{
+    background:green;
+    border: 1px solid green;
+
+}
+.exist-user{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.password-box .input-icon{
+    position: absolute;
+    top: 52px;
+    right: 52px;
+    color: rgb(63, 61, 61);
+    font-size: 1.3em;
+}
+@media (max-width:480px) {
+    .register-container{
+        width: 90%;
+    }
+}

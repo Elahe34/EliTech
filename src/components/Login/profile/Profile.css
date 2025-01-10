@@ -1,0 +1,78 @@
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    margin-bottom: 20px;
+}
+
+.user-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    /* رنگ بهتری برای نام */
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.profile-links .profile-items{
+    padding: 10px 0;
+    font-size: 1.1em;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 10px;
+}
+
+.profile-linkss a:hover {
+    color: #0056b3;
+}
+
+.main-content {
+    flex: 2;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.favorites{
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+
+    .main-content {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        width: calc(100% - 270px);
+    }
+}
