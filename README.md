@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Elitech - سایت خرید و فروش لوازم دیجیتال
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Elitech یک سایت خرید و فروش لوازم دیجیتال است که شامل امکانات مختلف برای تجربه‌ای راحت و جذاب از خرید آنلاین می‌باشد.
 
-## Available Scripts
+## ویژگی‌ها:
 
-In the project directory, you can run:
+- **صفحات مختلف:**
+  - صفحه اصلی با نمایش محصولات و خدمات
+  - صفحه سبد خرید با محاسبه مجموع خرید و تخفیف‌ها
+  - صفحه ثبت‌نام و ورود با اعتبارسنجی فرم‌ها با استفاده از **Yup** و **Formik**
+  - صفحه اخبار و اطلاعیه‌ها
+  - صفحه جزییات هر محصول
+  - صفحه ارتباط با ما که ایمیل‌های ارسال شده را با استفاده از **EmailJS** مدیریت می‌کند
+  - صفحه فروشگاه با قابلیت جستجو و فیلتر محصولات بر اساس برند و ویژگی‌ها
+  - صفحه پروفایل کاربری که اطلاعات کاربر را نمایش می‌دهد (پروفایل کامل نشده است)
 
-### `npm start`
+- **قابلیت‌ها و تعاملات:**
+  - استفاده از **Context API** برای مدیریت وضعیت و داده‌ها
+  - طراحی واکنش‌گرا (Responsive Design) برای نمایش مناسب در دستگاه‌های مختلف
+  - انیمیشن‌های سفارشی و استفاده از **AOS** برای افکت‌های اسکرول
+  - ذخیره داده‌ها در **localStorage** و استفاده از **cookies** برای مدیریت وضعیت کاربر
+  - سیستم سبد خرید با امکان افزودن محصولات به سبد خرید و محاسبه اتوماتیک مجموع خرید وتخفیف
+  - استفاده از **Accordion** برای نمایش بیشترین سوالات
+  - جستجو و فیلتر محصولات به صورت داینامیک (بر اساس برند، قدیمی‌ترین و جدیدترین محصولات(
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **جزئیات بیشتر:**
+  - برای هر محصول در بخش فروشگاه، صفحه جزئیات باز می‌شود که اطلاعات کامل محصول را نمایش می‌دهد.
+  - در صفحه ارتباط با ما، کاربران می‌توانند ایمیل ارسال کنند و پیغام خود را برای مدیریت ارسال نمایند.
+  - دکمه خروج برای کاربران در نظر گرفته شده که پس از خروج دوباره دکمه‌های ثبت‌نام و ورود نمایش داده می‌شود.
+  - پس از ورود کاربر، یک گزینه جدید به نوار ناوبری برای پروفایل اضافه می‌شود.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## نحوه نصب:
 
-### `npm test`
+1. پروژه را از گیت‌هاب کلون کنید:
+   ```bash
+   git clone https://github.com/yourusername/EliTech.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    2.  وارد دایرکتوری پروژه شوید:
 
-### `npm run build`
+cd elitech
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    3.  وابستگی‌ها را نصب کنید:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    4.  پروژه را اجرا کنید:
 
-### `npm run eject`
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+پروژه در حال حاضر باید در آدرس http://localhost:3000 در مرورگر شما در دسترس باشد.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+تکنولوژی‌ها و ابزارهای مورد استفاده:
+   React برای ساخت رابط کاربری
+   React Context API برای مدیریت وضعیت
+  Yup و Formik برای اعتبارسنجی فرم‌ها
+   EmailJS برای ارسال ایمیل‌ها
+  localStorage و cookies برای ذخیره‌سازی داده‌ها
+  CSS و AOS برای انیمیشن‌ها و طراحی واکنش‌گرا
+  React Router برای ناوبری بین صفحات مختلف
+   npm برای مدیریت بسته‌ها
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+توسعه‌دهندگان:
+    • الهه سلطانی
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
