@@ -3,13 +3,13 @@ export const navitem=[
     {
         id:1,
         url:"/",
-        text:"خانه"
+        text:" خانه "
     },
     
     {
         id:2,
         url:"/products",
-        text:"فروشگاه"
+        text:" فروشگاه "
     },
     {
         id:3,
