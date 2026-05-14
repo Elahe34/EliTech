@@ -19,7 +19,7 @@ const Cards = () => {
         })
     },[])
     return (
-        <section>
+        <section className='new-products'>
             <div className='title-star'>
                 <img className='starpic' src='/images/star.png' />
                 <span className='new'>جدیدترین ها در ماه گذشته</span>

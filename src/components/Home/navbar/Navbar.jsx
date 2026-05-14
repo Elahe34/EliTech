@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState, useContext } from 'react'
 import { navitem } from "../../../data"
 import { Link, useNavigate } from 'react-router-dom'
-import { FaBars, FaShoppingBag, FaTimes, FaUser } from 'react-icons/fa'
+import { FaBars, FaSearch, FaShoppingBag, FaTimes, FaUser } from 'react-icons/fa'
 import "./Navbar.css"
 import { DataContext } from '../../context'
 
@@ -91,9 +91,10 @@ const Navbar = () => {
                     }
                 </div>
                 <div className="search-site">
-                    <button onClick={handleSearchBtn} className='search-button'>جستجو</button>
-                    <input onKeyDown={handleSearch} onChange={handleSearch} className='search-input' type="text" placeholder='بگرد و ببین' />
+                    <button onClick={handleSearchBtn} className='search-button'><FaSearch className='search-icon'/></button>
+                    <input onKeyDown={handleSearch} onChange={handleSearch} className='search-input' type="text" placeholder='جستجو کنید...' ></input>
                 </div>
+
                 <div className="nav-icon">
                     <div className='shopping-card'>
                         {
@@ -116,7 +117,8 @@ const Navbar = () => {
                             <div className='register-login'>
                                 <Link className='register-icon' to="/register"><FaUser /></Link>
 
-                                <span><Link className='now'   to="/Register">ثبت نام / </Link></span>
+                                <span><Link className='now'   to="/Register">ثبت نام </Link></span>
+                                <span><Link className='now'   >/</Link></span>
                                 <span><Link className='now'   to="/login">ورود</Link></span>
 
                             </div>
@@ -130,4 +132,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar 
